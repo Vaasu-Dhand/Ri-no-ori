@@ -1,3 +1,4 @@
+// tags: ['recursion', 'easy', 'math']
 /**
  * Given a number n. find the factorial of that number
  */

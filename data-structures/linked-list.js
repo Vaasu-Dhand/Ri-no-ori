@@ -1,3 +1,4 @@
+// tags: ['linked-list', 'medium']
 class Node {
   constructor(value) {
     this.value = value;
@@ -64,43 +65,40 @@ class LinkedList {
 
   removeFrom(index) {
     if (index < 0 || index > this.getSize()) {
-        console.error('No element exists at this index')
-        return null;
+      console.error("No element exists at this index");
+      return null;
     }
 
     let removedNode;
     if (index === 0) {
-        removedNode = this.head;
-        this.head = this.head.next;
+      removedNode = this.head;
+      this.head = this.head.next;
     } else {
-
     }
 
-    length--
-    return removedNode.value
-    
+    length--;
+    return removedNode.value;
   }
 
   removeValue(value) {
     if (this.size === 0) {
-        return null
+      return null;
     }
     // Remove first index
     // 1 -> 2 -> 3
     //     2 -> 3
     // First element to be removed
     if (this.head.value === value) {
-        this.head = this.head.next
+      this.head = this.head.next;
     } else {
-        // Middle or last element
-        let pointer = this.head;
-        while (pointer.value === value) {
-            
-            pointer = pointer.next
-        }
+      // Middle or last element
+      let pointer = this.head;
+      while (pointer.value === value) {
+        pointer = pointer.next;
+      }
     }
-    
-    length--
+
+    length--;
   }
 
   print() {

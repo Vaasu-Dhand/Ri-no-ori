@@ -1,3 +1,4 @@
+// tags: ['graph', 'traversal', 'bfs', 'medium']
 /**
  * BFS is a Binary tree (at most two children right and left) traversal algo
  * It uses a queue and loop to iterate through a tree level by levetl
