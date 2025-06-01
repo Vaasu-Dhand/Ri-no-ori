@@ -1,17 +1,34 @@
 {
   "name": "ri-no-ori",
   "version": "1.0.0",
+  "description": "理の織り (Ri no ori) stands for 'Weaving Logic' in Japanese. This repository is about Data Structures and Algorithms",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "node exercise/smallest-value-in-tree.js"
+    "test": "node exercise/[NAME].js",
+    "tags": "node tag-finder.js",
+    "find": "node tag-finder.js find",
+    "list": "node tag-finder.js list",
+    "random": "node tag-finder.js random",
+    "stats": "node tag-finder.js stats"
   },
-  "keywords": [],
+  "bin": {
+    "tag-finder": "./tag-finder.js"
+  },
+  "keywords": [
+    "data-structures",
+    "algorithms",
+    "practice",
+    "tags",
+    "cli"
+  ],
   "imports": {
     "#utils/*": "./utils/*.js"
   },
   "author": "",
   "license": "ISC",
-  "description": "理の織り (Ri no ori) stands for 'Weaving Logic' in Japanese. This repository is about Data Structures and Algorithms",
+  "dependencies": {
+    "commander": "^11.1.0"
+  },
   "devDependencies": {}
 }

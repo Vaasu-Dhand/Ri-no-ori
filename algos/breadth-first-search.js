@@ -17,7 +17,6 @@ function bfs(tree) {
       queue.push(node.right);
     }
   }
-  
 }
 
 function node(val) {
