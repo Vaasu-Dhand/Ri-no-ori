@@ -1,4 +1,4 @@
-import { BINARY_SEARCH_TREE } from "#utils/mock-data";
+import { BINARY_SEARCH_TREE } from "#utils/data";
 
 function smallestNode(tree) {
   // Assuming we don't know its a Binary Search Tree
