@@ -2,11 +2,16 @@
   "name": "ri-no-ori",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node exercise/smallest-value-in-tree.js"
   },
   "keywords": [],
+  "imports": {
+    "#utils/*": "./utils/*.js"
+  },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "理の織り (Ri no ori) stands for 'Weaving Logic' in Japanese. This repository is about Data Structures and Algorithms",
+  "devDependencies": {}
 }
